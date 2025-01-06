@@ -1,53 +1,66 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
+import {FaBars, FaGithub, FaLinkedin} from 'react-icons/fa';
+import {HiX} from 'react-icons/hi';
+import './styles.css';
 
 const data = [
-    {
-        label : 'HOME',
-        to : '/'
-    },
 
-    {
-        label : 'ABOUT',
-        to : '/about'
-    },
+    { label: 'ABOUT ME', to: '/about' },
 
-    {
-        label : 'EXPERIENCE',
-        to : '/experience'
-    },
+    { label: 'MY EXPERIENCES', to: '/experience'},
 
-    {
-        label : 'PROJECTS',
-        to : '/projects'
-    },
+    { label: 'MY PROJECTS', to: '/projects' },
 
-    {
-        label : 'CONTACT',
-        to : '/contact'
-    },
+    { label: 'LINKEDIN', to: 'https://linkedin.com/in/kyleyyung', isSocial: true, icon: <FaLinkedin size="20" /> },
+
+    { label: 'GITHUB', to: 'https://github.com/KyleYung', isSocial: true, icon: <FaGithub size="20" /> },
+
+    { label: 'CONNECT WITH ME', to: '/contact' },
 ]
 
 const Navbar = () => {
+
+    
+    const [toggleIcon, setToggleIcon] = useState(false);
+
+    // func that changes value of toggleIcon (true or false)
+    const handleToggleIcon = () => {
+        setToggleIcon(!toggleIcon); //sets the new state to the opposite of its curr val
+    };
+
     return (
         <div>
-            <nav class="navbar">
-                <div class="navbar-container">
-                    <Link to = {'/'} class="navbar-container-logo">
-                    KY
+            <nav className="navbar">
+                <div className="navbar-container">
+                    <Link to = {'/'} className="navbar-container-logo">
+                        KY
                     </Link>
                 </div>
-                <ul class="navbar-container-menu">
-                    {
-                        data.map((item, key)=> (
-                            <li key={key} class="navbar-container-menu-item">
-                                <Link to={item.to} class="navbar-container-menu-item-link">
+                <ul className="navbar-container-menu">
+                    {data.map((item, key) => (
+                        <li key={key} className="navbar-container-menu-item">
+                            {item.isSocial ? (
+                                /* if item is a social, render logo */
+                                <a href={item.to} target="_blank" className="navbar-container-menu-item-link">
+                                    {item.icon}
+                                </a>
+                            ) : (
+                                /* else render the text */
+                                <Link to={item.to} className="navbar-container-menu-item-link">
                                     {item.label}
                                 </Link>
-                            </li>
-                        ))
+                            )}
+                        </li>
+                        ))}
+                    </ul>
+                
+                <div className="nav-icon" onClick={handleToggleIcon}>
+                    {
+                        // check if toggleIcon is true. If it is,render HiX, else render FaBars
+                        toggleIcon ? <HiX size="30"/> : <FaBars size="30"/>
                     }
-                </ul>
+                </div>
             </nav>
         </div>
     )
