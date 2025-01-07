@@ -38,6 +38,11 @@
 
 .home-description {
     font-size: 4rem;
+    line-height: 6rem;
+    color: #fff;
+}
+
+.home-description span {
     background: #36D1DC; 
     background: -webkit-linear-gradient(to right,#36D1DC,#5B86E5); 
     background: linear-gradient(to right,#36D1DC,#5B86E5);

@@ -37,7 +37,7 @@ const Navbar = () => {
                         KY
                     </Link>
                 </div>
-                <ul className="navbar-container-menu">
+                <ul className= {`navbar-container-menu ${toggleIcon ? 'active' : ''} `}>
                     {data.map((item, key) => (
                         <li key={key} className="navbar-container-menu-item">
                             {item.isSocial ? (

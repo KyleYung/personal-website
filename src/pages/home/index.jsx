@@ -6,7 +6,7 @@ const Home=()=>{
         <section className="home" id="home">
             <div className="home-container">
                 <h1 className="home-heading">Hey, I'm<span> Kyle</span></h1>
-                <p className="home-description">Nice to meet you</p>
+                <p className="home-description">Nice to <span>meet you</span></p>
             </div>
         </section>
     )

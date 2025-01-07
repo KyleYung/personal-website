@@ -12,7 +12,7 @@
   
 /* Logo Styling */
 .navbar-container-logo {
-    font-size: 24px;
+    font-size: 1.2rem;
     font-weight: bold;
     color: #90E6FC;
     text-decoration: none;
@@ -28,7 +28,7 @@
 }
 
 /* Menu Item Styling */
-    .navbar-container-menu-item {
+.navbar-container-menu-item {
     margin: 0 10px;
 }
 
@@ -55,6 +55,40 @@
     display: none;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
+    .navbar-container-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 80px;
+        width: 100%;
+        left: -110%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
 
+    .navbar-container-menu.active {
+        background:  #222222;
+        left: 0px;
+        opacity: 1;
+    } 
+
+    .navbar-container-menu-item {
+        margin: 0px;
+        padding: 20px 0px;
+        width: 100%;
+    }
+
+    .navbar-container-menu-item-link {
+        background: inherit;
+        border-bottom: 1px solid rgb(55, 55, 55);
+        font-size: 1rem;
+    }
+
+    .nav-icon {
+        display: block;
+        cursor: pointer;
+        color: #90E6FC;
+    }
 }
