@@ -13,14 +13,15 @@ function App() {
 
       <Navbar/>
 
-      <Routes>
-        <Route index path="/" element={<Home/>}/>
-        <Route path="/about" element={<About/>}/>
-        <Route path="/experience" element={<Experience/>}/>
-        <Route path="/projects" element={<Projects/>}/>
-        <Route path="/contact" element={<Contact/>}/>
-      </Routes>
-
+      <div className="App-content">
+        <Routes>
+          <Route index path="/" element={<Home/>}/>
+          <Route path="/about" element={<About/>}/>
+          <Route path="/experience" element={<Experience/>}/>
+          <Route path="/projects" element={<Projects/>}/>
+          <Route path="/contact" element={<Contact/>}/>
+        </Routes>
+      </div>
     </div>
   );
 }
