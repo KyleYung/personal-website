@@ -1,0 +1,71 @@
+/* Parent Container */
+.confirm {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 0px;
+}
+  
+/* Header Styling */
+.confirm-header {
+  background: #36D1DC; /* fallback for old browsers */
+  background: -webkit-linear-gradient( to right,#36D1DC,#5B86E5);
+  background: linear-gradient(to right, #36D1DC, #5B86E5); 
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -mo-text-fill-color: transparent;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.confirm-text {
+  flex: 1; 
+  text-align: left;
+  color: white;
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.confirm-button {
+  font-size: 1rem;
+  background: rgb(55, 55, 55);
+  padding: 20px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.35s;
+  outline: none;
+  margin-top: 50px;
+}
+
+.confirm-button p {
+  color: white;
+  z-index: 2;
+  font-weight: 700;
+  position: relative;
+}
+
+.confirm-button:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #36D1DC;
+  transition: all 0.35s;
+  border-radius: 4px;
+}
+
+.confirm-button:hover {
+  color: #fff;
+}
+
+.confirm-button:hover:after {
+  width: 100%;
+}
