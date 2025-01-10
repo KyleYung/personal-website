@@ -1,0 +1,81 @@
+.contact {
+    padding: 50px 0px;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-header {
+    background: #36D1DC; /* fallback for old browsers */
+    background: -webkit-linear-gradient( to right,#36D1DC,#5B86E5);
+    background: linear-gradient(to right, #36D1DC, #5B86E5); 
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -mo-text-fill-color: transparent;
+}
+
+.contact-form {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.form {
+    width: 90%;
+}
+
+.form-input {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid rgb(55, 55, 55);
+    color: #fff;
+    background-color: rgb(55, 55, 55);
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+label {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #fff;
+    cursor: text;
+    transition: 0.3s;
+}
+
+.form-button {
+    padding: 10px 0;
+    outline: none;
+    background-color: rgb(55, 55, 55);
+    color: #fff;
+    border: 1px solid rgb(55, 55, 55);
+    width: 25%;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.form-button:hover {
+    background-color: #90E6FC;
+    color: black;
+}
+
+input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label {
+    top: -30px;
+    font-size: 12px;
+}
