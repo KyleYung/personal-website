@@ -42,7 +42,7 @@ const Navbar = () => {
                         <li key={key} className="navbar-container-menu-item">
                             {item.isSocial ? (
                                 /* if item is a social, render logo */
-                                <a href={item.to} target="_blank" className="navbar-container-menu-item-link">
+                                <a href={item.to} target="_blank" rel="noopener noreferrer" className="navbar-container-menu-item-link">
                                     {item.icon}
                                 </a>
                             ) : (

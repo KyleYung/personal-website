@@ -1,7 +1,20 @@
 .timeline {
+    display: flex;
     position: relative;
     max-width: 90%;
     margin: 50px auto;
+    flex-direction: column;
+}
+
+.experience-header {
+    background: #36D1DC; /* fallback for old browsers */
+    background: -webkit-linear-gradient( to right,#36D1DC,#5B86E5);
+    background: linear-gradient(to right, #36D1DC, #5B86E5); 
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -mo-text-fill-color: transparent;
 }
 
 .timeline-container {
