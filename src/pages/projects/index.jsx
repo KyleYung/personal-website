@@ -14,10 +14,10 @@ const Project=()=>{
 
         {
             id: 2,
-            title: "eCommerce Store Website",
-            description: "An application where users are able to browse through various products, view details about them and add them to their cart where they'll be able to later purchase them. They may also sell products by listing them under their account. This app features user authentication, creation/update/deletion of data models, data sorting/searching as well as full checkout functionality.",
+            title: "DealHive",
+            description: "An application where users are able to browse through various products, view details about them and add them to their cart where they'll be able to later purchase them. They may also sell products by listing them under their account. This app features user account creation and authentication, creation/update/deletion of data models, data sorting/searching as well as full checkout functionality.",
             image: 'ecommerce.png',
-            link: ''
+            link: 'https://github.com/KyleYung/dealhive'
         },
 
         {
@@ -38,10 +38,10 @@ const Project=()=>{
 
         {
             id: 5,
-            title: "Travel Booking Site",
-            description: "blah blah blah",
-            image: 'journey.png',
-            link: 'https://github.com/KyleYung/JOURNEY'
+            title: "Motion Sensor Light",
+            description: "A custom motion sensor lighting system using Arduino, ESP32 Nano boards, photoresistors and ultrasonic range modules. Operates for 12 hours daily (6AM - 6PM), measures ambient light levels and detects objects within 5 feet, enhancing environmental awareness and automated lighting control.",
+            image: 'IMG_3272.png',
+            link: 'https://github.com/KyleYung/Motion-Sensor-Light'
         },
     ];
 

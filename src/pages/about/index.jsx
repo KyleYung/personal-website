@@ -5,7 +5,6 @@ const About=()=>{
     return (
         <div class="about">
             <div class="about-content">
-                <div class="blank-space"></div>
                 <div className="about-header">
                     <h1 className="about-title">About Me</h1>
                 </div>
