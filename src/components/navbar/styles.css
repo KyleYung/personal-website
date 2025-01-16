@@ -9,6 +9,11 @@
     z-index: 1000;
     width: 100%;
   }
+
+  .navbar-container {
+    padding: 5px;
+    border-radius: 10px;
+  }
   
 /* Logo Styling */
 .navbar-container-logo {
@@ -18,7 +23,7 @@
     text-decoration: none;
 }
 
-.navbar-container-logo:hover {
+.navbar-container-logo:hover{
     color: #5de0fd;
 }
 

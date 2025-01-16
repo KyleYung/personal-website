@@ -7,7 +7,7 @@ const About=()=>{
             <div class="about-content">
                 <div class="blank-space"></div>
                 <div className="about-header">
-                    <h1 className="about-title">Who Am I?</h1>
+                    <h1 className="about-title">About Me</h1>
                 </div>
                 <p>I'm an aspiring Software Engineer and IT Technician with a passion for technology and a desire to make a difference. I'm a lifelong learner who thrives on growth from new challenges and experiences. Whether it's assisting someone with a minor issue or developing software that improves lives, I'm committed to making a positive impact.</p>
                 <a href="Kyle_Yung_Resume.pdf" class="download-button" download>Download Resume</a>
@@ -38,15 +38,15 @@ const About=()=>{
                     <div class="gallery-overlay"></div>
                 </div>
                 <div class="gallery-item">
-                    <img src="IMG_5543.jpeg" alt="Gallery Image 6"/>
+                    <img src="IMG_5543.jpeg" alt="Gallery Image 7"/>
                     <div class="gallery-overlay"></div>
                 </div>
                 <div class="gallery-item">
-                    <img src="IMG_8653.png" alt="Gallery Image 6"/>
+                    <img src="IMG_8653.png" alt="Gallery Image 8"/>
                     <div class="gallery-overlay"></div>
                 </div>
                 <div class="gallery-item">
-                    <img src="IMG_5405.JPG" alt="Gallery Image 6"/>
+                    <img src="IMG_5405.png" alt="Gallery Image 9"/>
                     <div class="gallery-overlay"></div>
                 </div>
             </div>

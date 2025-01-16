@@ -31,7 +31,7 @@ const Project=()=>{
         {
             id: 4,
             title: "AI Chess Bot",
-            description: "An AI-powered chess bot that utilizing Sepia and Java. Integrates the fundamental mechanics of chess gameplay as well as heuristic algorithms to enhance the bot's decision-making capabilities, allowing the bot to analyze the board more strategically by weighing factors like pawn structures, king safety, and control of central squares",
+            description: "An AI-powered chess bot that runs on Sepia and Java. Integrates the fundamental mechanics of chess gameplay as well as heuristic algorithms to enhance the bot's decision-making capabilities, allowing the bot to analyze the board more strategically by weighing factors like pawn structures, king safety, and control of central squares.",
             image: 'chess.jpeg',
             link: 'https://github.com/KyleYung/AI-Chess-Bot'
         },
@@ -53,15 +53,17 @@ const Project=()=>{
             <div className="projects-grid">
                 {projects.map((project) => (
                     <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link" key={project.id}>
-                        <div className="project-card" key={project.id}>
-                            <div className="project-card-image-container">
-                                <img src={project.image} alt={project.title} className="project-card-image"/>
-                                <div className="project-card-overlay">
+                        <div className="card">
+                            <div className="card-container">
+                                <div className="project-card-front">
+                                    <div className="project-card-image-container">
+                                        <img src={project.image} alt={project.title} className="project-card-image" />
+                                    </div>
+                                    <h2 className="project-card-title">{project.title}</h2>
+                                </div>
+                                <div className="project-card-back">
                                     <p className="project-card-description">{project.description}</p>
                                 </div>
-                            </div>
-                            <div>
-                                <h2 className="project-card-title">{project.title}</h2>
                             </div>
                         </div>
                     </a>

@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import {Link} from 'react-router-dom';
+import React, {useState, useEffect} from 'react';
+import {Link, useLocation} from 'react-router-dom';
 import {FaBars, FaGithub, FaLinkedin} from 'react-icons/fa';
 import {HiX} from 'react-icons/hi';
 import './styles.css';
@@ -24,10 +24,18 @@ const Navbar = () => {
     
     const [toggleIcon, setToggleIcon] = useState(false);
 
+    // Get the current location
+    const location = useLocation();
+
     // func that changes value of toggleIcon (true or false)
     const handleToggleIcon = () => {
         setToggleIcon(!toggleIcon); //sets the new state to the opposite of its curr val
     };
+
+    // Close the navbar when the route changes
+    useEffect(() => {
+        setToggleIcon(false); // Close the navbar
+    }, [location]); // Re-run this effect when the location changes
 
     return (
         <div>

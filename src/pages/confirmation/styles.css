@@ -24,7 +24,7 @@
 
 .confirm-text {
   flex: 1; 
-  text-align: left;
+  text-align: center;
   color: white;
   font-size: 1.5rem;
   line-height: 1.6;
@@ -68,4 +68,11 @@
 
 .confirm-button:hover:after {
   width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .confirm-text {
+    font-size: 1rem;
+    line-height: 1;
+  }
 }
