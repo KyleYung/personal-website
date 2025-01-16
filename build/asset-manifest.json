@@ -1,13 +1,29 @@
 {
   "files": {
     "main.css": "/personal-website/static/css/main.c1a41992.css",
-    "main.js": "/personal-website/static/js/main.04c203e9.js",
+    "main.js": "/personal-website/static/js/main.1b8e1675.js",
+    "static/media/IMG_5405.png": "/personal-website/static/media/IMG_5405.c0183e95b2ed12ca099d.png",
+    "static/media/tetris.png": "/personal-website/static/media/tetris.7e343acfc9a20acf2e2d.png",
+    "static/media/IMG_6984.JPG": "/personal-website/static/media/IMG_6984.2e46833608f014d7f99b.JPG",
+    "static/media/class-catcher.png": "/personal-website/static/media/class-catcher.90895c7703725cf8f3f8.png",
+    "static/media/ecommerce.png": "/personal-website/static/media/ecommerce.7120969cf869e113b00b.png",
+    "static/media/IMG_8653.png": "/personal-website/static/media/IMG_8653.591be2071303a7cd303b.png",
+    "static/media/IMG_3272.png": "/personal-website/static/media/IMG_3272.413e63faa1884c42dbf5.png",
+    "static/media/IMG_0375.jpeg": "/personal-website/static/media/IMG_0375.707987b26d130a41d6b4.jpeg",
+    "static/media/IMG_5090.jpeg": "/personal-website/static/media/IMG_5090.7cde4bcefefc3dcb724f.jpeg",
+    "static/media/IMG_0246.jpeg": "/personal-website/static/media/IMG_0246.fed50fd6682ce513790f.jpeg",
+    "static/media/IMG_5543.jpeg": "/personal-website/static/media/IMG_5543.5630add7deeab2dc8d33.jpeg",
+    "static/media/IMG_2067.JPG": "/personal-website/static/media/IMG_2067.d073f7366ce493089346.JPG",
+    "static/media/2017.jpg": "/personal-website/static/media/2017.231a52022b2f28d9ef6f.jpg",
+    "static/media/chess.jpeg": "/personal-website/static/media/chess.3d96249e86dcbb77ee2d.jpeg",
+    "static/media/beaver.jpg": "/personal-website/static/media/beaver.96c7385a995f824620ba.jpg",
+    "static/media/Kyle_Yung_Resume.pdf": "/personal-website/static/media/Kyle_Yung_Resume.f82d9fe1523e0c1d7e63.pdf",
     "index.html": "/personal-website/index.html",
     "main.c1a41992.css.map": "/personal-website/static/css/main.c1a41992.css.map",
-    "main.04c203e9.js.map": "/personal-website/static/js/main.04c203e9.js.map"
+    "main.1b8e1675.js.map": "/personal-website/static/js/main.1b8e1675.js.map"
   },
   "entrypoints": [
     "static/css/main.c1a41992.css",
-    "static/js/main.04c203e9.js"
+    "static/js/main.1b8e1675.js"
   ]
 }
