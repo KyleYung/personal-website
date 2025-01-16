@@ -41,7 +41,7 @@ const Navbar = () => {
         <div>
             <nav className="navbar">
                 <div className="navbar-container">
-                    <Link to = {'/'} className="navbar-container-logo">
+                    <Link to = {'/personal-website'} className="navbar-container-logo">
                         KY
                     </Link>
                 </div>

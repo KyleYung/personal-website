@@ -16,7 +16,7 @@ function App() {
 
       <div className="App-content">
         <Routes>
-          <Route index path="/" element={<Home/>}/>
+          <Route index path="/personal-website" element={<Home/>}/>
           <Route path="/about" element={<About/>}/>
           <Route path="/experience" element={<Experience/>}/>
           <Route path="/projects" element={<Projects/>}/>
