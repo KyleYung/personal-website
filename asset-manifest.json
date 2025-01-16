@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/personal-website/static/css/main.c1a41992.css",
-    "main.js": "/personal-website/static/js/main.1b8e1675.js",
+    "main.js": "/personal-website/static/js/main.07e2f206.js",
     "static/media/IMG_5405.png": "/personal-website/static/media/IMG_5405.c0183e95b2ed12ca099d.png",
     "static/media/tetris.png": "/personal-website/static/media/tetris.7e343acfc9a20acf2e2d.png",
     "static/media/IMG_6984.JPG": "/personal-website/static/media/IMG_6984.2e46833608f014d7f99b.JPG",
@@ -20,10 +20,10 @@
     "static/media/Kyle_Yung_Resume.pdf": "/personal-website/static/media/Kyle_Yung_Resume.f82d9fe1523e0c1d7e63.pdf",
     "index.html": "/personal-website/index.html",
     "main.c1a41992.css.map": "/personal-website/static/css/main.c1a41992.css.map",
-    "main.1b8e1675.js.map": "/personal-website/static/js/main.1b8e1675.js.map"
+    "main.07e2f206.js.map": "/personal-website/static/js/main.07e2f206.js.map"
   },
   "entrypoints": [
     "static/css/main.c1a41992.css",
-    "static/js/main.1b8e1675.js"
+    "static/js/main.07e2f206.js"
   ]
 }
