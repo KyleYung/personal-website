@@ -61,7 +61,7 @@ const Project=()=>{
                                 </div>
                             </div>
                             <div>
-                            <h2 className="project-card-title">{project.title}</h2>
+                                <h2 className="project-card-title">{project.title}</h2>
                             </div>
                         </div>
                     </a>
