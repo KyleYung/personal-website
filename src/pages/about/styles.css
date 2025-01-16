@@ -1,50 +1,114 @@
-/* Parent Container */
 .about {
-    position: relative;
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-  }
-  
-  /* Header Styling */
-  .about-header {
-    background: #36D1DC; /* fallback for old browsers */
-    background: -webkit-linear-gradient( to right,#36D1DC,#5B86E5);
-    background: linear-gradient(to right, #36D1DC, #5B86E5); 
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -mo-text-fill-color: transparent;
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  /* Content Container */
-  .about-content {
-    display: flex; /* Side-by-side layout */
-    align-items: center; /* Align items vertically */
-    justify-content: center; /* Center content horizontally */
-    gap: 20px; /* Space between the image and bio */
-  }
-  
-  /* Image Styling */
-  .about-img {
-    width: 400px; /* Adjust image size */
-    height: 400px;
-    object-fit: cover;
-    border-radius: 10px; /* Optional: Add rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
-  }
-  
-  /* Bio Styling */
-  .about-bio {
-    flex: 1; 
-    text-align: left;
-    color: white;
-    font-size: 2rem;
-    line-height: 1.6;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: #222222;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.blank-space {
+  height: 55%;
+  width: auto;
+}
+
+
+.about-header {
+  display: flex;
+}
+
+/* header styling */
+.about-title {
+  background: #36D1DC; /* fallback for old browsers */
+  background: -webkit-linear-gradient( to right,#36D1DC,#5B86E5);
+  background: linear-gradient(to right, #36D1DC, #5B86E5); 
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -mo-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+
+.about-content {
+  flex: 1;
+  color: #fff;
+  max-width: 40%;
+}
+
+.about-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  text-align: left;
+  color: white;
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+}
+
+.download-button {
+  display: inline-block;
+  background-color: #fff;
+  color: #121212;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #36D1DC;
+  color: #fff;
+}
+
+.photo-gallery {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 200px;
+  gap: 10px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* overlay effect */
+.gallery-overlay {
+position: absolute;
+top: -100%;
+left: 0;
+width: 100%;
+height: 100%;
+background: linear-gradient(to bottom, rgba(0, 229, 255, 0.4), rgba(0, 128, 255, 0.5));
+z-index: 1;
+transition: top 0.6s ease-in-out;
+display: flex;
+align-items: center;
+justify-content: center;
+pointer-events: none;
+}
+
+.gallery-item:hover .gallery-overlay {
+top: 0;
+opacity: 1;
+}

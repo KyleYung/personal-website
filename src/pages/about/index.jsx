@@ -3,11 +3,52 @@ import './styles.css';
 
 const About=()=>{
     return (
-        <div class="about" id="about">
-            <h1 className="about-header">About Me</h1>
+        <div class="about">
             <div class="about-content">
-                <img src="IMG_5405.JPG" class="about-img" alt="Image of Me"/>
-                <p className="about-bio">I am currently a senior at Boston University and majoring in Computer Science.</p>
+                <div class="blank-space"></div>
+                <div className="about-header">
+                    <h1 className="about-title">Who Am I?</h1>
+                </div>
+                <p>I'm an aspiring Software Engineer and IT Technician with a passion for technology and a desire to make a difference. I'm a lifelong learner who thrives on growth from new challenges and experiences. Whether it's assisting someone with a minor issue or developing software that improves lives, I'm committed to making a positive impact.</p>
+                <a href="Kyle_Yung_Resume.pdf" class="download-button" download>Download Resume</a>
+            </div>
+            <div class="photo-gallery">
+                <div class="gallery-item">
+                    <img src="2017.jpg" alt="Gallery Image 1"/>
+                    <div class="gallery-overlay"></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG_2067.JPG" alt="Gallery Image 2"/>
+                    <div class="gallery-overlay"></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG_0375.jpeg" alt="Gallery Image 3"/>
+                    <div class="gallery-overlay"></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG_5090.jpeg" alt="Gallery Image 4"/>
+                    <div class="gallery-overlay"></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG_0246.jpeg" alt="Gallery Image 5"/>
+                    <div class="gallery-overlay"></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG_6984.JPG" alt="Gallery Image 6"/>
+                    <div class="gallery-overlay"></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG_5543.jpeg" alt="Gallery Image 6"/>
+                    <div class="gallery-overlay"></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG_8653.png" alt="Gallery Image 6"/>
+                    <div class="gallery-overlay"></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG_5405.JPG" alt="Gallery Image 6"/>
+                    <div class="gallery-overlay"></div>
+                </div>
             </div>
         </div>
     )

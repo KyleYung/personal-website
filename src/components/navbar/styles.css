@@ -14,9 +14,14 @@
 .navbar-container-logo {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #90E6FC;
+    color: white;
     text-decoration: none;
 }
+
+.navbar-container-logo:hover {
+    color: #5de0fd;
+}
+
 
 /* Menu Container */
 .navbar-container-menu {
@@ -47,7 +52,7 @@
 
 /* Hover Effect */
 .navbar-container-menu-item-link:hover {
-    background-color: #90E6FC; 
+    background-color: #5de0fd; 
     color: black; 
 }
 

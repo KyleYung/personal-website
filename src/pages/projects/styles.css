@@ -22,14 +22,14 @@
     font-size: 2rem;
     margin-bottom: 20px;
 }
-  
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 20px;
     padding: 20px;
-  }
-  
+}
+
 /* project card container */
 .project-card {
     background-color: rgb(55, 55, 55);
@@ -38,22 +38,25 @@
     text-align: center;
     transition: transform 0.3s ease;
     position: relative;
-  }
-  
-  /* image container */
-  .project-card-image-container {
+}
+
+/* image container */
+.project-card-image-container {
     position: relative;
     overflow: hidden;
-  }
-  
-  .project-card-image {
+}
+
+.project-card-image {
+    object-fit: cover;
+    height: 300px;
     width: 100%;
     display: block;
     border-radius: 30px 30px 0 0;
-  }
-  
-  /* overlay effect */
-  .project-card-overlay {
+    transition: filter 0.3s ease;
+}
+
+/* overlay effect */
+.project-card-overlay {
     position: absolute;
     top: -100%; 
     left: 0;
@@ -61,16 +64,24 @@
     height: 100%;
     background: linear-gradient(to bottom, rgba(0, 229, 255, 0.564), rgba(0, 128, 255, 0.8));
     z-index: 1;
-    transition: top 0.5s ease-in-out;
+    transition: top 0.6s ease-in-out;
     pointer-events: none;
-  }
-  
-  .project-card:hover .project-card-overlay {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.project-card:hover .project-card-overlay {
     top: 0; 
-  }
-  
-  /* Icon in the overlay */
-  .project-card-overlay::after {
+    opacity: 1;
+}
+
+.project-card:hover .project-card-image {
+    filter: blur(10px);
+}
+
+/* Icon in the overlay */
+.project-card-overlay::after {
     font-size: 2rem;
     color: white;
     position: absolute;
@@ -78,10 +89,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-  }
-  
-  .project-card-title {
+}
+
+.project-card-title {
     background: #36D1DC; 
     background: -webkit-linear-gradient( to right,#36D1DC,#5B86E5);
     background: linear-gradient(to right, #36D1DC, #5B86E5); 
@@ -92,15 +102,17 @@
     -mo-text-fill-color: transparent;
     font-size: 1.5rem;
     margin: 20px;
-  }
-  
-  .project-card-description {
+}
+
+.project-card-description {
+    font-weight: 700;
     font-size: 1rem;
     color: white;
     margin-bottom: 1rem;
-  }
+    text-align: center;
+    padding: 10px;
+}
 
-  a {
+a {
     text-decoration: none;
-  }
-  
+}
