@@ -5,7 +5,7 @@ const Experience=()=>{
     return (
             <div className="timeline">
                 <div className="timeline-container left">
-                    <img className = "timeline-img" src="beaver.jpg" alt=""/>
+                    <img className = "timeline-img" src={require("../../assets/beaver.jpg")} alt=""/>
                     <div className="timeline-item">
                         <h2>Beaver Country Day School</h2>
                         <h4>IT Technician Intern</h4>
@@ -16,7 +16,7 @@ const Experience=()=>{
                 </div>
 
                 <div className="timeline-container right">
-                    <img className = "timeline-img" src="rf.jpg" alt=""/>
+                    <img className = "timeline-img" src={require("../../assets/rf.jpg")} alt=""/>
                     <div className="timeline-item">
                         <h2>Rodman Ford</h2>
                         <h4>Software Engineer Intern</h4>
@@ -27,7 +27,7 @@ const Experience=()=>{
                 </div>
 
                 <div className="timeline-container left">
-                    <img className = "timeline-img" src="rf.jpg" alt=""/>
+                    <img className = "timeline-img" src={require("../../assets/rf.jpg")} alt=""/>
                     <div className="timeline-item">
                         <h2>Rodman Ford</h2>
                         <h4>IT Technician Intern</h4>
@@ -39,7 +39,7 @@ const Experience=()=>{
                 </div>
 
                 <div className="timeline-container right">
-                    <img className = "timeline-img" src="bu.png" alt=""/>
+                    <img className = "timeline-img" src={require("../../assets/bu.png")} alt=""/>
                     <div className="timeline-item">
                         <h2>Boston University</h2>
                         <h4>CS Course Assistant</h4>
